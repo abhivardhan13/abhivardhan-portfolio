@@ -32,13 +32,13 @@ export const viralReelsData = [
     exactMetric: "170,000+ Reel Views",
     url: "https://www.instagram.com/reel/C_CrK11SloC/",
     thumbnail: "/images/reel-170k.jpg",
-    creativeFocus: "High-tempo motion & dynamic music synchronization",
+    creativeFocus: "High-tempo choreography & beat-synchronized visual cuts",
     creativeElements: {
-      hook: "Opens instantly mid-motion rather than on a static title card, catching the viewer during their natural scroll.",
-      storytelling: "Builds momentum by pairing physical group movement with visual contrast and progressive speed changes.",
-      editingRhythm: "Cuts are aligned strictly to musical accent beats, creating an instinctive, satisfying cadence that keeps viewers watching.",
-      musicSelection: "Selected an energetic, culturally resonant sound that complements the physical momentum of the choreography.",
-      framing: "Wide directional framing that gives performers breathing room while keeping the central subject firmly grounded in frame."
+      hook: "Opens directly mid-movement, capturing attention during a normal scroll rather than relying on a static intro.",
+      storytelling: "Builds momentum by pairing group choreography with natural visual contrast and progressive formation changes.",
+      editingRhythm: "Cuts are timed closely to musical beats, creating an energetic flow that feels satisfying to watch.",
+      musicSelection: "Chosen for its driving rhythm and cultural resonance, complementing the physical momentum of the dance.",
+      framing: "Centered composition with directional leading lines, giving the performers room while keeping the focal point clear."
     }
   },
   {
@@ -48,13 +48,13 @@ export const viralReelsData = [
     exactMetric: "71,000+ Reel Views",
     url: "https://www.instagram.com/reel/DUK0Ea3AWIg/",
     thumbnail: "/images/reel-71k.jpg",
-    creativeFocus: "Warm mood, intimate focal length & cinematic pacing",
+    creativeFocus: "Atmospheric warmth, intimate focal length & calm visual pacing",
     creativeElements: {
-      hook: "Draws the eye with warm, textured natural lighting and a tactile close-up that creates immediate curiosity.",
-      storytelling: "Focuses on human micro-moments and environmental warmth rather than overt transitions.",
-      editingRhythm: "Deliberate, unhurried cut pacing that allows the viewer to take in the visual textures and ambient mood.",
-      musicSelection: "Understated instrumental track that supports the visual atmosphere without fighting for center stage.",
-      framing: "Shallow depth of field with macro framing that highlights material details, subtle expressions and organic light flares."
+      hook: "Uses warm, textured natural lighting and an intimate composition to draw the viewer into the scene.",
+      storytelling: "Focuses on human micro-moments and ambient atmosphere rather than rapid transitions.",
+      editingRhythm: "An unhurried pace that lets the viewer take in the visual mood, textures, and subtle expressions.",
+      musicSelection: "A mellow instrumental track that supports the visual atmosphere without competing for attention.",
+      framing: "Shallow depth of field with macro framing that highlights subtle details, natural reflections, and ambient light."
     }
   }
 ];
@@ -66,31 +66,31 @@ export const speculativeCampaigns = [
     title: "NOT FOR THE LOCKER.",
     theme: "Fine jewellery as part of everyday personal style.",
     tagline: "Fine jewellery should be worn on a Tuesday morning, not locked away in a vault.",
-    disclaimer: "Independent Speculative Concept — Created as part of this portfolio application. Not commissioned, approved or executed by BlueStone Jewellery & Lifestyle Limited.",
-    conceptOverview: "In many Indian households, fine jewellery is treated as a security deposit — kept in bank lockers or heavy almirahs, brought out only for weddings. 'Not For The Locker' positions fine jewellery as part of everyday style: worn with crisp cotton shirts, oversized blazers, and morning coffees.",
+    disclaimer: "Independent Speculative Concept — Conceived as a campaign proposal for this application. Not commissioned, approved or executed by BlueStone Jewellery & Lifestyle Limited. Conceptual imagery shown represents creative mood and styling direction.",
+    conceptOverview: "In many traditional households, heavy jewellery is kept in bank lockers or heavy almirahs, reserved strictly for weddings and grand ceremonies. 'Not For The Locker' is built on a creative observation: modern personal style calls for versatile, understated fine jewellery that lives in everyday life — worn with linen shirts, tailored blazers, and morning coffees.",
     heroImage: "/images/campaign1-hero.jpg",
     detailImage: "/images/campaign1-detail.jpg",
     lifestyleImage: "/images/campaign1-lifestyle.jpg",
     creativePillars: [
       {
-        title: "The Cultural Observation",
-        desc: "Fine gold and diamonds spend 350 days a year locked in steel boxes. Modern young women don't live in wedding lehengas; they live in everyday contemporary fashion."
+        title: "The Creative Observation",
+        desc: "Traditional jewellery often remains locked away waiting for rare occasions. The campaign hypothesis is that contemporary jewellery should live outside the locker — worn freely as part of a daily wardrobe."
       },
       {
         title: "The Creative Proposition",
-        desc: "Bring jewellery back to life. Treat contemporary fine pieces as personal daily signatures that belong in meetings, casual lunches, and daily commutes."
+        desc: "Position fine jewellery as an everyday essential rather than an occasional luxury. Understated designs that elevate a workday, a coffee catch-up, or a casual weekend."
       },
       {
         title: "The Visual World",
-        desc: "Warm sunlight, crisp white linen, tactile stone, raw denim and macro jewelry details. Honest, unstaged, and effortlessly elegant."
+        desc: "Warm natural daylight, relaxed neutral fabrics, stone textures, and tactile macro framing. Unforced, calm, and grounded in daily routines."
       }
     ],
     filmStoryboard: [
       {
         scene: "01. The Steel Locker",
         time: "00:00 – 00:05",
-        visual: "Close-up of a heavy brass key turning in a bank vault locker. The heavy steel door pulls open. Cold, windowless room with velvet boxes resting in shadow.",
-        audio: "Metallic clank echoing in silence. Quiet voiceover: 'Why did we keep the things we love locked away?'"
+        visual: "Close-up of a heavy brass key turning in a bank vault locker. The steel door opens into a quiet, fluorescent room with velvet boxes resting in shadow.",
+        audio: "A metallic clank echoing in silence. Soft voiceover: 'Why did we keep the things we love locked away?'"
       },
       {
         scene: "02. Morning Sunlight",
@@ -101,8 +101,8 @@ export const speculativeCampaigns = [
       {
         scene: "03. The Daily Rhythm",
         time: "00:12 – 00:20",
-        visual: "Montage of everyday moments: hands typing on a laptop, earrings catching light on an auto-rickshaw commute, a subtle pendant over a casual shirt.",
-        audio: "Warm, rhythmic soundtrack picks up. Natural Foley sounds: keyboard clicks, street ambience."
+        visual: "Montage of everyday moments: hands typing on a laptop, earrings catching light on a morning commute, a subtle pendant resting over a casual shirt.",
+        audio: "Warm, rhythmic soundtrack enters. Natural Foley sounds: keyboard clicks, city ambience."
       },
       {
         scene: "04. The Casual Question",
@@ -126,7 +126,7 @@ export const speculativeCampaigns = [
       },
       {
         title: "#WearYourGold Social Series",
-        copy: "Everyday outfit pairings showing fine jewellery styled with casual wear, work blazers, and weekend denim.",
+        copy: "Everyday styling reels showing fine jewellery paired with casual wear, work blazers, and weekend denim.",
         context: "Creator-led styling reels demystifying fine jewellery for daily routines."
       },
       {
@@ -142,23 +142,23 @@ export const speculativeCampaigns = [
     title: "FOR EVERY FIRST.",
     theme: "Jewellery celebrating self-earned milestones and personal achievements.",
     tagline: "The first job. The first paycheck. The first piece of gold you bought for yourself.",
-    disclaimer: "Independent Speculative Concept — Created as part of this portfolio application. Not commissioned, approved or executed by BlueStone Jewellery & Lifestyle Limited.",
-    conceptOverview: "Historically, fine jewellery was bought by elders or given at weddings. 'For Every First' celebrates young women as the primary purchasers of their own jewellery, marking personal career milestones, first promotions, and moments of self-made independence.",
+    disclaimer: "Independent Speculative Concept — Conceived as a campaign proposal for this application. Not commissioned, approved or executed by BlueStone Jewellery & Lifestyle Limited. Conceptual imagery shown represents creative mood and styling direction.",
+    conceptOverview: "Fine jewellery is often associated with traditional milestones like weddings or family gifts. 'For Every First' explores a different perspective: celebrating personal firsts — a first job, a first salary, or a quiet moment of financial independence — with jewellery bought for oneself.",
     heroImage: "/images/campaign2-hero.jpg",
     detailImage: "/images/campaign2-detail.jpg",
     lifestyleImage: "/images/campaign2-lifestyle.jpg",
     creativePillars: [
       {
         title: "The Emotional Insight",
-        desc: "Buying your first piece of fine jewellery with your own earned salary carries an unmatched sense of pride. It is a quiet, permanent badge of self-reliance."
+        desc: "Purchasing a piece of fine jewellery with your own earned income carries personal meaning. It acts as an understated, lasting symbol of a milestone you worked for."
       },
       {
         title: "The Creative Proposition",
-        desc: "Anchor BlueStone as the destination for self-earned milestones. Fine jewellery not as an inherited heirloom, but as a personal trophy of hard work."
+        desc: "Celebrate self-earned milestones. Jewellery chosen and purchased by the individual as a personal marker of independence."
       },
       {
         title: "The Visual World",
-        desc: "Intimate and cinematic. Natural skin tones, contemporary workspaces, mirror reflections, and honest expressions of quiet personal pride."
+        desc: "Intimate and honest. Natural daylight, modern workspaces, clean mirror reflections, and authentic quiet moments."
       }
     ],
     filmStoryboard: [
@@ -183,7 +183,7 @@ export const speculativeCampaigns = [
       {
         scene: "04. Six Months Later",
         time: "00:19 – 00:25",
-        visual: "Before walking into a major client presentation, she touches the pendant around her neck. A moment of grounding and quiet confidence.",
+        visual: "Before walking into a major presentation, she touches the pendant around her neck. A moment of grounding and quiet confidence.",
         audio: "Confident footsteps, room ambience, music reaches its emotional crescendo."
       },
       {
@@ -197,12 +197,12 @@ export const speculativeCampaigns = [
     socialExecutions: [
       {
         title: "#MyFirstGold UGC Stories",
-        copy: "Real stories from working women sharing what they bought with their first salary and what that milestone means to them.",
+        copy: "Real stories from working professionals sharing what they bought with their first salary and what that milestone means to them.",
         context: "Community-driven short-form reels and carousel confessionals."
       },
       {
         title: "Milestone Curations",
-        copy: "Accessible starting collections curated by life moments: 'First Promotion', 'First Home', 'First Solo Trip'.",
+        copy: "Accessible starting collections categorized by life moments: 'First Promotion', 'First Home', 'First Solo Trip'.",
         context: "Content clusters organized around relatable achievements."
       },
       {

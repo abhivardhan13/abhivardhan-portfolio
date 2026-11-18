@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
-import { InstagramIcon, LinkedInIcon } from './Icons';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { InstagramIcon } from './Icons';
 import { candidateInfo } from '../data/portfolioData';
 
 export default function Hero() {
@@ -32,7 +32,7 @@ export default function Hero() {
               {candidateInfo.bio}
             </p>
 
-            {/* Sub-meta tag: IIT Hyderabad, unobtrusive */}
+            {/* Sub-meta tag: IIT Hyderabad, clean & unobtrusive */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-charcoal-500 pt-1 font-mono">
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-forest-700"></span>
@@ -41,7 +41,7 @@ export default function Hero() {
               <span>&bull;</span>
               <span>240K+ Combined Reel Views</span>
               <span>&bull;</span>
-              <span>Application for BlueStone Brand &amp; Content</span>
+              <span>Portfolio Application &bull; BlueStone Brand &amp; Content</span>
             </div>
 
             {/* Navigation & Action Links */}
@@ -84,20 +84,17 @@ export default function Hero() {
               <div className="relative bg-stone-200 overflow-hidden border border-stone-400/80 shadow-md">
                 <img
                   src="/images/hero-editorial.jpg"
-                  alt="Editorial creative director visual: natural light, intentional framing, contemporary lifestyle"
+                  alt="Editorial photograph of fine jewellery displayed on warm linen and stone texture in natural light"
                   className="w-full h-[460px] sm:h-[520px] object-cover filter contrast-[1.03] brightness-[0.98] transition-transform duration-700 hover:scale-[1.02]"
                 />
 
-                {/* Magazine Caption Overlay */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/40 to-transparent p-6 text-cream-50">
+                {/* Editorial Framing Caption */}
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/85 via-charcoal-950/30 to-transparent p-6 text-cream-50">
                   <div className="text-[10px] font-mono tracking-widest uppercase text-terracotta-300 mb-1">
-                    Creative Direction &bull; Short-Form
+                    Editorial Still &bull; Tactile Aesthetics
                   </div>
-                  <div className="font-serif text-lg text-cream-50 italic">
-                    "Pacing, rhythm, and human honesty in every frame."
-                  </div>
-                  <div className="text-[11px] text-stone-300 mt-1">
-                    Bhukya Abhivardhan Nayak &mdash; Content Generalist Candidate
+                  <div className="font-serif text-base sm:text-lg text-cream-50 font-normal">
+                    Everyday fine jewellery &bull; Natural light &bull; Modern simplicity
                   </div>
                 </div>
               </div>

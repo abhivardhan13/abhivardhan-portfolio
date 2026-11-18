@@ -28,7 +28,7 @@ export default function SpeculativeCampaign1() {
           <div className="lg:col-span-8 space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono uppercase tracking-magazine text-terracotta-600 font-semibold">
-                Campaign Case Study 01
+                Campaign Proposal 01
               </span>
               <span className="w-8 h-[1px] bg-terracotta-500"></span>
               <span className="text-xs font-mono text-charcoal-500 uppercase">
@@ -56,12 +56,12 @@ export default function SpeculativeCampaign1() {
           <div className="md:col-span-7 relative overflow-hidden bg-stone-200 border border-stone-300">
             <img
               src={campaign.heroImage}
-              alt="Model wearing minimal gold ring with morning coffee and relaxed white shirt"
+              alt="Conceptual styling moodboard: model wearing minimal gold ring with relaxed neutral attire in morning sunlight"
               className="w-full h-[400px] sm:h-[480px] object-cover filter contrast-[1.03] transition-transform duration-700 hover:scale-[1.02]"
             />
             <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/80 to-transparent p-5 text-cream-50">
               <span className="text-[10px] font-mono uppercase tracking-widest text-terracotta-300 block mb-0.5">
-                Campaign Mood
+                Visual Art Direction &bull; Styling Reference
               </span>
               <div className="font-serif text-lg">
                 Morning rituals &bull; Natural sunlight &bull; Gold as everyday wear
@@ -69,27 +69,27 @@ export default function SpeculativeCampaign1() {
             </div>
           </div>
 
-          {/* Right Stack: Detail & Urban Lifestyle */}
+          {/* Right Stack: Detail & Neutral Lifestyle Context */}
           <div className="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 sm:gap-6">
             <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
               <img
                 src={campaign.detailImage}
-                alt="Macro gold jewellery texture on warm stone"
+                alt="Tactile macro texture reference of gold jewellery on warm stone"
                 className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
               />
               <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
-                Material: Polished gold &amp; tactile textures
+                Texture: Polished gold &amp; warm stone surface
               </div>
             </div>
 
             <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
               <img
                 src={campaign.lifestyleImage}
-                alt="Modern woman wearing subtle gold jewellery in an urban contemporary setting"
+                alt="Hands wearing delicate everyday gold ring holding warm ceramic cup on neutral linen in natural morning light"
                 className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
               />
               <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
-                Context: Workwear blazers, linen &amp; street casual
+                Context: Morning coffee &bull; Neutral linen &bull; Daily rhythm
               </div>
             </div>
           </div>

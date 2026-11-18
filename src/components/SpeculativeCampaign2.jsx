@@ -28,7 +28,7 @@ export default function SpeculativeCampaign2() {
           <div className="lg:col-span-8 space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono uppercase tracking-magazine text-terracotta-600 font-semibold">
-                Campaign Case Study 02
+                Campaign Proposal 02
               </span>
               <span className="w-8 h-[1px] bg-terracotta-500"></span>
               <span className="text-xs font-mono text-charcoal-500 uppercase">
@@ -56,12 +56,12 @@ export default function SpeculativeCampaign2() {
           <div className="md:col-span-7 relative overflow-hidden bg-stone-200 border border-stone-300">
             <img
               src={campaign.heroImage}
-              alt="Young professional woman in contemporary office, quiet confidence, wearing delicate pendant"
+              alt="Conceptual styling moodboard: young working professional in contemporary setting, quiet confidence, wearing delicate pendant"
               className="w-full h-[400px] sm:h-[480px] object-cover filter contrast-[1.03] transition-transform duration-700 hover:scale-[1.02]"
             />
             <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/80 to-transparent p-5 text-cream-50">
               <span className="text-[10px] font-mono uppercase tracking-widest text-terracotta-300 block mb-0.5">
-                Campaign Mood
+                Visual Art Direction &bull; Styling Reference
               </span>
               <div className="font-serif text-lg">
                 Self-earned pride &bull; First salary milestones &bull; Quiet independence
@@ -74,7 +74,7 @@ export default function SpeculativeCampaign2() {
             <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
               <img
                 src={campaign.detailImage}
-                alt="Close-up of minimalist diamond solitaire pendant with warm skin tones"
+                alt="Close-up detail reference of delicate solitaire pendant in warm lighting"
                 className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
               />
               <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
@@ -85,11 +85,11 @@ export default function SpeculativeCampaign2() {
             <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
               <img
                 src={campaign.lifestyleImage}
-                alt="Modern collaborative workplace and first achievement setting"
+                alt="Contemporary personal workspace and calm morning accomplishment reference"
                 className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
               />
               <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
-                Setting: Career breakthrough &amp; personal ambition
+                Setting: Career breakthrough &amp; personal milestone
               </div>
             </div>
           </div>
