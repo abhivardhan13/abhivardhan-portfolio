@@ -67,7 +67,7 @@ export const speculativeCampaigns = [
     theme: "Fine jewellery as part of everyday personal style.",
     tagline: "Fine jewellery should be worn on a Tuesday morning, not locked away in a vault.",
     disclaimer: "Independent Speculative Concept — Conceived as a campaign proposal for this application. Not commissioned, approved or executed by BlueStone Jewellery & Lifestyle Limited. Conceptual imagery shown represents creative mood and styling direction.",
-    conceptOverview: "In many traditional households, heavy jewellery is kept in bank lockers or heavy almirahs, reserved strictly for weddings and grand ceremonies. 'Not For The Locker' is built on a creative observation: modern personal style calls for versatile, understated fine jewellery that lives in everyday life — worn with linen shirts, tailored blazers, and morning coffees.",
+    conceptOverview: "Fine jewellery is often associated with weddings and special occasions. This concept explores a different perspective: wearing jewellery as part of everyday personal style, whether at work, over morning coffee or on a casual day out.",
     heroImage: "/images/campaign1-hero.jpg",
     detailImage: "/images/campaign1-detail.jpg",
     lifestyleImage: "/images/campaign1-lifestyle.jpg",
@@ -202,8 +202,8 @@ export const speculativeCampaigns = [
       },
       {
         title: "Milestone Curations",
-        copy: "Accessible starting collections categorized by life moments: 'First Promotion', 'First Home', 'First Solo Trip'.",
-        context: "Content clusters organized around relatable achievements."
+        copy: "Jewellery storytelling inspired by personal milestones such as a first promotion, first home or first solo trip.",
+        context: "A content and storytelling concept, not a confirmed product offering."
       },
       {
         title: "Editorial Profile Series",
@@ -221,11 +221,11 @@ export const experienceData = [
     role: "Club Head & Content Lead",
     stats: "25-Member Dance Team",
     image: "/images/shuffle-crew.jpg",
-    summary: "Led team choreography coordination, visual storytelling, and video content production for IIT Hyderabad's premier dance crew.",
+    summary: "As Club Head and Content Lead, I coordinated a 25-member team and contributed to choreography planning, short-form video creation and social media content. I worked on reel ideas, camera movement, editing and music selection to bring the crew's performances to life.",
     responsibilities: [
       "Coordinated rehearsal schedules and performance blocking for a 25-member collegiate dance team.",
       "Conceptualized, shot, and edited short-form dance reels with cut-to-the-beat pacing and dynamic camera movement.",
-      "Selected trending, rhythmic tracks and aligned transitions to maximize visual momentum.",
+      "Selected trending, rhythmic tracks and aligned transitions to complement the visual momentum.",
       "Directed social media visual tone, cover frames, and video output across Instagram."
     ],
     links: [
@@ -245,12 +245,12 @@ export const experienceData = [
     role: "Media & PR Coordinator",
     stats: "Campus Championship Media",
     image: "/images/milan-pr.jpg",
-    summary: "Managed digital publicity, live event coverage, and multimedia storytelling for IIT Hyderabad's largest annual inter-hostel tournament.",
+    summary: "As Media & PR Coordinator, I worked on publicity and media coverage for Milan, IIT Hyderabad's annual inter-hostel tournament. My responsibilities included creating promotional creatives, sharing match updates, covering events and reaching out to other student communities.",
     responsibilities: [
       "Created promotional event creatives, social countdowns, and tournament announcements.",
       "Conducted real-time tournament coverage across sports, arts, and performing competitions.",
-      "Executed external outreach to build excitement across student communities and alumni networks.",
-      "Maintained rapid turnaround times for daily score updates and high-tempo event recaps."
+      "Executed external outreach to build excitement across student communities.",
+      "Maintained rapid turnaround times for daily score updates and event recaps."
     ],
     links: [
       {
@@ -273,11 +273,11 @@ export const experienceData = [
     role: "PR & Media Coordinator",
     stats: "84-Page Magazine & Brand Identity",
     image: "/images/nss-magazine.jpg",
-    summary: "Directed publication design, event media, and public outreach for student-led community and rural initiatives.",
+    summary: "As PR & Media Coordinator, I contributed to publication design, event publicity and media work for NSS. My work included designing and organising content for an 84-page magazine, creating publicity material for guest talks and working on the varsity jacket design.",
     responsibilities: [
       "Designed the complete editorial layout and typography hierarchy for an 84-page official NSS annual magazine.",
       "Publicized guest-talk lectures and community engagement programs across digital and print touchpoints.",
-      "Designed the official IIT Hyderabad NSS varsity jacket apparel from initial sketch to vendor print specifications.",
+      "Designed the official IIT Hyderabad NSS varsity jacket apparel from initial sketch to final artwork.",
       "Documented rural education drives, health initiatives, and community service projects with clean visual storytelling."
     ],
     links: [
@@ -291,11 +291,11 @@ export const experienceData = [
 
 export const quickBiteProject = {
   title: "QuickBite AI",
-  subtitle: "Zomato AI-Powered Food Search & Intent Discovery",
+  subtitle: "An independent conceptual prototype inspired by food discovery on platforms like Zomato",
   role: "Product Concept & UX Research",
   url: "https://github.com/abhivardhan13/zomato-ai-search",
-  summary: "A conceptual conversational search prototype exploring how people discover food through contextual intent (like 'quick post-gym protein bowl under 30 mins') rather than rigid keyword filters.",
-  takeaway: "Demonstrates an understanding of search psychology, user intent, and digital UX problem-solving — skills that directly translate to how customers discover lifestyle and jewellery products online."
+  summary: "QuickBite AI is a conceptual food-search prototype that explores how users can discover meals through everyday needs and context rather than relying only on fixed keywords.",
+  takeaway: "Demonstrates an understanding of search psychology, user intent, and digital UX problem-solving — skills that translate to how customers discover lifestyle and jewellery products online."
 };
 
 export const skillsData = [

@@ -24,8 +24,7 @@ export default function ContentConnects() {
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-cream-200/80 font-light leading-relaxed">
-            In short-form video, people decide in less than two seconds whether to stay or scroll. 
-            Here is a breakdown of the creative choices behind two of my most viewed reels — focusing on opening hooks, editing rhythm, music, and framing.
+            Good short-form content needs a strong opening, clear visual storytelling and thoughtful editing. Here are two of my most-viewed reels, along with a breakdown of the creative choices behind them.
           </p>
         </div>
 
@@ -105,7 +104,7 @@ export default function ContentConnects() {
             </div>
 
             <p className="text-xs text-cream-200/60 font-mono text-center">
-              Tap above to view the actual video on Instagram
+              Visual reference image — tap above to watch the actual reel on Instagram
             </p>
           </div>
 
@@ -197,17 +196,6 @@ export default function ContentConnects() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Relevance Note for Fine Jewellery Content */}
-            <div className="p-6 bg-forest-950/60 border border-terracotta-500/40 border-l-4 border-l-terracotta-500 text-cream-100">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-terracotta-300 block mb-1">
-                How this informs brand content at BlueStone
-              </span>
-              <p className="text-sm text-cream-200/90 leading-relaxed font-light">
-                Jewellery thrives on tactile observation: catching natural light mid-stride, macro close-ups of delicate settings, and human context. 
-                Applying sharp hook construction and natural pacing turns jewellery from a static display item into a dynamic lifestyle desire.
-              </p>
             </div>
           </div>
         </div>

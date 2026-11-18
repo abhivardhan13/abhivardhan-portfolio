@@ -125,19 +125,13 @@ export default function ContactFooter() {
                 </a>
               </div>
             </div>
-
-            <div className="pt-2 text-xs text-cream-200/60 font-mono border-t border-forest-800">
-              Location: Kandi, Sangareddy, Telangana &bull; IIT Hyderabad
-            </div>
           </div>
 
         </div>
 
         {/* Speculative Concept Notice */}
         <div className="py-8 border-b border-forest-900/80 text-xs text-cream-200/60 leading-relaxed font-light">
-          <strong className="text-terracotta-300 font-semibold uppercase tracking-wider block sm:inline mr-2">
-            Speculative Work Notice:
-          </strong>
+          <strong className="text-terracotta-300 font-semibold uppercase tracking-wider">Speculative Work Notice: </strong>
           The campaign concepts featured on this website ("NOT FOR THE LOCKER." and "FOR EVERY FIRST.") are independent speculative proposals designed specifically as part of an application for the Content Generalist – Brand &amp; Content role at BlueStone Jewellery &amp; Lifestyle Limited. They were not commissioned, approved, or executed by BlueStone.
         </div>
 
