@@ -1,186 +1,134 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, Mail, Sparkles, BookOpen, Layers, Award } from 'lucide-react';
-import { InstagramIcon } from './Icons';
+import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
+import { InstagramIcon, LinkedInIcon } from './Icons';
 import { candidateInfo } from '../data/portfolioData';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-36 bg-ivory-100 overflow-hidden border-b border-charcoal-800/10">
-      {/* Subtle editorial backdrop accent line */}
-      <div className="absolute top-0 right-1/4 w-[1px] h-full bg-charcoal-800/5 pointer-events-none hidden md:block" />
-      <div className="absolute top-0 left-1/3 w-[1px] h-full bg-charcoal-800/5 pointer-events-none hidden lg:block" />
-
+    <section id="top" className="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 bg-cream-100 overflow-hidden border-b border-stone-300">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
-        {/* Top Eyebrow / Application Banner */}
-        <div className="flex flex-wrap items-center gap-3 mb-6 sm:mb-8">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-champagne-50 border border-champagne-300 text-xs font-medium text-champagne-800 tracking-wide">
-            <span className="w-2 h-2 rounded-full bg-champagne-500"></span>
-            Application Portfolio for BlueStone Jewellery &amp; Lifestyle Limited
-          </span>
-          <span className="text-xs uppercase tracking-luxury text-charcoal-500 font-medium">
-            Role: Content Generalist – Brand &amp; Content
-          </span>
-        </div>
-
-        {/* Main Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
-          {/* Left Column: Heading & Narrative */}
-          <div className="lg:col-span-8 space-y-6 md:space-y-8">
-            <div className="space-y-3">
-              <p className="text-xs sm:text-sm uppercase tracking-luxury font-medium text-champagne-700">
-                Candidate Dossier &amp; Creative Showcase
-              </p>
-              
-              <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-charcoal-900 leading-[1.08]">
-                Bhukya Abhivardhan <br />
-                <span className="italic font-light text-champagne-600">Nayak</span>
-              </h1>
+        {/* Magazine Masthead & Asymmetric Hero Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+          
+          {/* Left / Editorial Copy Column */}
+          <div className="lg:col-span-7 space-y-7">
+            {/* Small Editorial Eyebrow */}
+            <div className="inline-flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-terracotta-500"></span>
+              <span className="text-xs font-semibold uppercase tracking-magazine text-terracotta-600">
+                {candidateInfo.editorialEyebrow}
+              </span>
             </div>
 
-            {/* Positioning Statement */}
-            <div className="py-2 border-l-2 border-champagne-500 pl-4 sm:pl-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-serif text-charcoal-800 font-medium tracking-wide">
-                {candidateInfo.role}
-              </h2>
-              <p className="text-sm text-charcoal-500 font-sans mt-1">
-                {candidateInfo.education.degree} — <span className="font-medium text-charcoal-700">{candidateInfo.education.institution}</span> (Class of {candidateInfo.education.graduationYear})
-              </p>
-            </div>
+            {/* Main Statement Heading */}
+            <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal text-charcoal-900 tracking-tight leading-[1.02]">
+              Stories <br />
+              <span className="italic font-light text-forest-900">worth stopping</span> <br />
+              for.
+            </h1>
 
-            {/* Editorial Manifesto */}
-            <p className="text-base sm:text-lg text-charcoal-700 leading-relaxed max-w-2xl font-light">
-              Fine jewellery is rarely just precious metal and certified cut. It is a daily assertion of personal identity, an emotional milestone, and a visual rhythm. 
-              Applying an engineering mindset from <span className="font-medium text-charcoal-900">IIT Hyderabad</span> with a director’s sense of pacing, 
-              I design short-form content that captures attention organically and translate strategic brand tensions into contemporary lifestyle campaigns.
+            {/* Supporting Bio */}
+            <p className="text-base sm:text-lg text-charcoal-700 font-light leading-relaxed max-w-xl">
+              {candidateInfo.bio}
             </p>
 
-            {/* Action Buttons */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            {/* Sub-meta tag: IIT Hyderabad, unobtrusive */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-charcoal-500 pt-1 font-mono">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-forest-700"></span>
+                IIT Hyderabad (Class of 2027)
+              </span>
+              <span>&bull;</span>
+              <span>240K+ Combined Reel Views</span>
+              <span>&bull;</span>
+              <span>Application for BlueStone Brand &amp; Content</span>
+            </div>
+
+            {/* Navigation & Action Links */}
+            <div className="pt-3 flex flex-wrap items-center gap-4">
               <a
                 href="#campaign-01"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-charcoal-800 text-ivory-100 hover:bg-champagne-600 font-sans text-xs uppercase tracking-wider font-semibold rounded-none transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-forest-900 hover:bg-forest-800 text-cream-50 text-xs uppercase tracking-wider font-semibold transition-all shadow-sm"
               >
-                <span>Explore Speculative Campaigns</span>
-                <ArrowDown className="w-4 h-4" />
+                <span>View Creative Campaigns</span>
+                <ArrowDown className="w-3.5 h-3.5" />
               </a>
 
               <a
-                href="#content-strategy"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-transparent border border-charcoal-800 text-charcoal-800 hover:bg-charcoal-800 hover:text-ivory-100 font-sans text-xs uppercase tracking-wider font-semibold rounded-none transition-all duration-200"
+                href="#reels"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-transparent border border-charcoal-800 text-charcoal-800 hover:bg-charcoal-800 hover:text-cream-50 text-xs uppercase tracking-wider font-semibold transition-all"
               >
-                <span>View Viral Content (240K+)</span>
+                <span>Made to Catch the Eye</span>
               </a>
 
               <a
                 href={candidateInfo.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-4 py-3.5 text-charcoal-700 hover:text-champagne-600 font-sans text-xs uppercase tracking-wider font-medium transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs text-charcoal-700 hover:text-terracotta-600 uppercase tracking-wider font-semibold py-3 transition-colors ml-1"
               >
                 <InstagramIcon className="w-4 h-4" />
-                <span>Instagram Profile</span>
+                <span>Instagram</span>
                 <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
               </a>
             </div>
           </div>
 
-          {/* Right Column: Key Proof Points / Editorial Stat Card */}
-          <div className="lg:col-span-4 space-y-6">
-            <div className="bg-ivory-50 p-6 sm:p-8 border border-charcoal-200 shadow-sm relative">
-              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden pointer-events-none">
-                <div className="w-24 h-24 bg-champagne-200/40 rotate-45 transform translate-x-12 -translate-y-12"></div>
-              </div>
+          {/* Right / Magazine Image Feature Spread */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative mx-auto max-w-md lg:max-w-none">
+              {/* Back offset decorative stone frame */}
+              <div className="absolute -top-3 -right-3 w-full h-full bg-stone-300 pointer-events-none hidden sm:block"></div>
+              
+              {/* Main Editorial Image Frame */}
+              <div className="relative bg-stone-200 overflow-hidden border border-stone-400/80 shadow-md">
+                <img
+                  src="/images/hero-editorial.jpg"
+                  alt="Editorial creative director visual: natural light, intentional framing, contemporary lifestyle"
+                  className="w-full h-[460px] sm:h-[520px] object-cover filter contrast-[1.03] brightness-[0.98] transition-transform duration-700 hover:scale-[1.02]"
+                />
 
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold block mb-4">
-                Core Strengths &amp; Evidence
-              </span>
-
-              <div className="space-y-5 divide-y divide-charcoal-200/60">
-                <div className="pt-1">
-                  <div className="font-serif text-3xl font-semibold text-charcoal-900">
-                    240,000+
+                {/* Magazine Caption Overlay */}
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/40 to-transparent p-6 text-cream-50">
+                  <div className="text-[10px] font-mono tracking-widest uppercase text-terracotta-300 mb-1">
+                    Creative Direction &bull; Short-Form
                   </div>
-                  <div className="text-xs uppercase tracking-wider text-charcoal-600 font-medium mt-0.5">
-                    Organic Instagram Reach
+                  <div className="font-serif text-lg text-cream-50 italic">
+                    "Pacing, rhythm, and human honesty in every frame."
                   </div>
-                  <p className="text-xs text-charcoal-500 mt-1 leading-normal">
-                    Driven by precise hook timing, retention sequencing, and audio curation across key reels (170K+ &amp; 71K+).
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <div className="font-serif text-2xl font-semibold text-charcoal-900">
-                    2 Speculative Campaigns
+                  <div className="text-[11px] text-stone-300 mt-1">
+                    Bhukya Abhivardhan Nayak &mdash; Content Generalist Candidate
                   </div>
-                  <div className="text-xs uppercase tracking-wider text-charcoal-600 font-medium mt-0.5">
-                    BlueStone Brand Strategy
-                  </div>
-                  <p className="text-xs text-charcoal-500 mt-1 leading-normal">
-                    Full 30s hero storyboards, cultural insights, and omni-channel extensions for "Not For The Locker" and "For Every First".
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <div className="font-serif text-2xl font-semibold text-charcoal-900">
-                    25-Member Team Lead
-                  </div>
-                  <div className="text-xs uppercase tracking-wider text-charcoal-600 font-medium mt-0.5">
-                    Shuffle Crew &amp; Campus Media
-                  </div>
-                  <p className="text-xs text-charcoal-500 mt-1 leading-normal">
-                    Directing rehearsal cadences, performance cinematography, Inter-hostel PR coverage, and an 84-page NSS magazine.
-                  </p>
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-charcoal-200 flex items-center justify-between text-xs">
-                <span className="text-charcoal-500">Academic Hub</span>
-                <span className="font-medium text-charcoal-800">IIT Hyderabad ('27)</span>
+              {/* Editorial Pill Note */}
+              <div className="absolute -bottom-4 -left-3 sm:-left-6 bg-cream-50 border border-stone-300 px-4 py-2.5 shadow-sm text-xs text-charcoal-800 hidden sm:flex items-center gap-2 font-mono">
+                <span className="w-2 h-2 rounded-full bg-terracotta-500 animate-pulse"></span>
+                <span>BlueStone Speculative Work Below</span>
               </div>
-            </div>
-
-            {/* Quick Contact Box */}
-            <div className="p-4 bg-champagne-50/70 border border-champagne-200/70 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-champagne-200 flex items-center justify-center text-champagne-800">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div>
-                  <div className="text-[11px] uppercase tracking-wider text-champagne-800 font-semibold">
-                    Open for Discussion
-                  </div>
-                  <div className="text-xs text-charcoal-700 font-mono">
-                    {candidateInfo.socials.email}
-                  </div>
-                </div>
-              </div>
-              <a
-                href="#contact"
-                className="text-xs font-semibold text-champagne-700 hover:text-champagne-900 underline underline-offset-4"
-              >
-                Inquire
-              </a>
             </div>
           </div>
+
         </div>
 
-        {/* Section Index Ribbon */}
-        <div className="mt-16 sm:mt-24 pt-8 border-t border-charcoal-800/10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-medium text-charcoal-600">
-          <a href="#content-strategy" className="hover:text-champagne-700 transition-colors flex items-center gap-2 group">
-            <span className="font-mono text-champagne-600 font-semibold">01</span>
-            <span className="group-hover:translate-x-0.5 transition-transform">Content That Connects</span>
+        {/* Bottom Section Navigator Strip */}
+        <div className="mt-16 sm:mt-24 pt-8 border-t border-stone-300 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-medium text-charcoal-600">
+          <a href="#reels" className="hover:text-forest-900 transition-colors flex items-center gap-2 group">
+            <span className="font-mono text-terracotta-600 font-semibold">01</span>
+            <span className="group-hover:translate-x-0.5 transition-transform">Made to Catch the Eye (Reels)</span>
           </a>
-          <a href="#campaign-01" className="hover:text-champagne-700 transition-colors flex items-center gap-2 group">
-            <span className="font-mono text-champagne-600 font-semibold">02</span>
+          <a href="#campaign-01" className="hover:text-forest-900 transition-colors flex items-center gap-2 group">
+            <span className="font-mono text-terracotta-600 font-semibold">02</span>
             <span className="group-hover:translate-x-0.5 transition-transform">Campaign: Not For The Locker</span>
           </a>
-          <a href="#campaign-02" className="hover:text-champagne-700 transition-colors flex items-center gap-2 group">
-            <span className="font-mono text-champagne-600 font-semibold">03</span>
+          <a href="#campaign-02" className="hover:text-forest-900 transition-colors flex items-center gap-2 group">
+            <span className="font-mono text-terracotta-600 font-semibold">03</span>
             <span className="group-hover:translate-x-0.5 transition-transform">Campaign: For Every First</span>
           </a>
-          <a href="#leadership" className="hover:text-champagne-700 transition-colors flex items-center gap-2 group">
-            <span className="font-mono text-champagne-600 font-semibold">04</span>
-            <span className="group-hover:translate-x-0.5 transition-transform">Leadership &amp; PR Portfolio</span>
+          <a href="#experience" className="hover:text-forest-900 transition-colors flex items-center gap-2 group">
+            <span className="font-mono text-terracotta-600 font-semibold">04</span>
+            <span className="group-hover:translate-x-0.5 transition-transform">Campus Leadership &amp; Media</span>
           </a>
         </div>
       </div>

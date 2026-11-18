@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import { ShieldAlert, Film, Clock, Heart, Sparkles, Award, ArrowRight, Share2, Compass, Layers } from 'lucide-react';
+import { Film, Clock, Heart, AlertCircle, Share2, Award } from 'lucide-react';
 import { speculativeCampaigns } from '../data/portfolioData';
 
 export default function SpeculativeCampaign2() {
   const campaign = speculativeCampaigns[1]; // For Every First
-  const [selectedScene, setSelectedScene] = useState(0);
+  const [activeFrame, setActiveFrame] = useState(0);
 
   return (
-    <section id="campaign-02" className="py-24 sm:py-32 bg-ivory-100 border-b border-charcoal-800/10 relative">
+    <section id="campaign-02" className="py-24 sm:py-32 bg-stone-100 border-b border-stone-300 relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Speculative Badge / Mandatory Disclaimer Banner */}
-        <div className="mb-8 p-4 bg-champagne-50 border border-champagne-300 text-charcoal-800 flex items-start sm:items-center gap-3">
-          <ShieldAlert className="w-5 h-5 text-champagne-700 shrink-0 mt-0.5 sm:mt-0" />
+        
+        {/* Prominent Speculative Disclaimer Banner */}
+        <div className="mb-10 p-4 bg-stone-200 border border-stone-400/80 text-charcoal-800 flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-terracotta-600 shrink-0 mt-0.5" />
           <div className="text-xs sm:text-sm">
-            <span className="font-semibold uppercase tracking-wider text-champagne-900 mr-2">
-              Speculative Brand Campaign 02:
+            <span className="font-semibold uppercase tracking-wider text-charcoal-900 mr-2">
+              Speculative Creative Concept:
             </span>
             <span className="text-charcoal-700">
               {campaign.disclaimer}
@@ -22,241 +23,207 @@ export default function SpeculativeCampaign2() {
           </div>
         </div>
 
-        {/* Campaign Header */}
-        <div className="max-w-4xl mb-16 sm:mb-20">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="font-mono text-xs uppercase tracking-luxury text-champagne-700 font-semibold">
-              Campaign Case Study #{campaign.number}
-            </span>
-            <span className="w-12 h-[1px] bg-champagne-400"></span>
-            <span className="px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider bg-champagne-700 text-ivory-100">
-              Personal Milestones &amp; Autonomy
-            </span>
+        {/* Campaign Header & Hero Overview */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
+          <div className="lg:col-span-8 space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono uppercase tracking-magazine text-terracotta-600 font-semibold">
+                Campaign Case Study 02
+              </span>
+              <span className="w-8 h-[1px] bg-terracotta-500"></span>
+              <span className="text-xs font-mono text-charcoal-500 uppercase">
+                {campaign.theme}
+              </span>
+            </div>
+
+            <h2 className="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal text-charcoal-900 tracking-tight leading-[0.98]">
+              {campaign.title}
+            </h2>
+
+            <p className="text-xl sm:text-2xl font-serif italic text-forest-900 pt-1">
+              "{campaign.tagline}"
+            </p>
           </div>
 
-          <h2 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-charcoal-900 tracking-tight leading-[1.05]">
-            {campaign.title}
-          </h2>
-
-          <p className="mt-4 text-xl sm:text-2xl font-serif italic text-champagne-700 font-light">
-            "{campaign.tagline}"
-          </p>
-
-          <p className="mt-6 text-base sm:text-lg text-charcoal-600 font-light leading-relaxed max-w-3xl">
-            {campaign.conceptSummary}
-          </p>
+          <div className="lg:col-span-4 text-sm text-charcoal-600 font-light leading-relaxed">
+            {campaign.conceptOverview}
+          </div>
         </div>
 
-        {/* Strategic Foundation: The Emotional Grounding */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="bg-ivory-50 border border-charcoal-200 p-6 sm:p-8 flex flex-col justify-between">
-            <div>
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold block mb-2">
-                01. The Gifting Stereotype
+        {/* Full-Width Visual Moodboard Spread (3 Images Asymmetric Magazine Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 mb-16">
+          {/* Main Large Emotional Portrait Shot */}
+          <div className="md:col-span-7 relative overflow-hidden bg-stone-200 border border-stone-300">
+            <img
+              src={campaign.heroImage}
+              alt="Young professional woman in contemporary office, quiet confidence, wearing delicate pendant"
+              className="w-full h-[400px] sm:h-[480px] object-cover filter contrast-[1.03] transition-transform duration-700 hover:scale-[1.02]"
+            />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950/80 to-transparent p-5 text-cream-50">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-terracotta-300 block mb-0.5">
+                Campaign Mood
               </span>
-              <h3 className="font-serif text-xl text-charcoal-900 mb-3">
-                Passive Receivers of Gold
-              </h3>
-              <p className="text-sm text-charcoal-600 leading-relaxed font-light">
-                {campaign.insight.culturalTension}
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-charcoal-200 text-xs text-charcoal-400 font-mono">
-              Old Industry Tropes
+              <div className="font-serif text-lg">
+                Self-earned pride &bull; First salary milestones &bull; Quiet independence
+              </div>
             </div>
           </div>
 
-          <div className="bg-ivory-50 border border-charcoal-200 p-6 sm:p-8 flex flex-col justify-between">
-            <div>
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold block mb-2">
-                02. The Emerging Reality
-              </span>
-              <h3 className="font-serif text-xl text-charcoal-900 mb-3">
-                Self-Funded Milestones
-              </h3>
-              <p className="text-sm text-charcoal-600 leading-relaxed font-light">
-                {campaign.insight.consumerShift}
-              </p>
+          {/* Right Stack: Detail & Modern Workplace */}
+          <div className="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 sm:gap-6">
+            <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
+              <img
+                src={campaign.detailImage}
+                alt="Close-up of minimalist diamond solitaire pendant with warm skin tones"
+                className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
+              />
+              <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
+                Detail: Dainty solitaire pendant &amp; subtle shine
+              </div>
             </div>
-            <div className="mt-6 pt-4 border-t border-charcoal-200 text-xs text-charcoal-400 font-mono">
-              Empowerment &amp; Pride
-            </div>
-          </div>
 
-          <div className="bg-charcoal-900 text-ivory-100 p-6 sm:p-8 flex flex-col justify-between">
-            <div>
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-400 font-semibold block mb-2">
-                03. The Campaign Line
-              </span>
-              <h3 className="font-serif text-xl text-ivory-100 mb-3">
-                "For Every First You Earned."
-              </h3>
-              <p className="text-sm text-ivory-200 leading-relaxed font-light">
-                {campaign.insight.creativeIdea}
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-charcoal-800 text-xs text-champagne-400 font-mono">
-              BlueStone Positioning
+            <div className="relative overflow-hidden bg-stone-200 border border-stone-300">
+              <img
+                src={campaign.lifestyleImage}
+                alt="Modern collaborative workplace and first achievement setting"
+                className="w-full h-[200px] sm:h-[228px] object-cover filter contrast-[1.02]"
+              />
+              <div className="absolute bottom-2 left-3 bg-cream-50/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono text-charcoal-800">
+                Setting: Career breakthrough &amp; personal ambition
+              </div>
             </div>
           </div>
+        </div>
+
+        {/* 3 Creative Pillars */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          {campaign.creativePillars.map((pillar, idx) => (
+            <div key={pillar.title} className="p-6 sm:p-8 bg-cream-100 border border-stone-300 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-mono text-terracotta-600 font-semibold block mb-2">
+                  0{idx + 1}
+                </span>
+                <h3 className="font-serif text-xl sm:text-2xl text-charcoal-900 mb-3">
+                  {pillar.title}
+                </h3>
+                <p className="text-sm text-charcoal-600 leading-relaxed font-light">
+                  {pillar.desc}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* 30-Second Emotional Film Storyboard */}
-        <div className="bg-ivory-50 border border-charcoal-200 p-6 sm:p-10 mb-16 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-charcoal-200 gap-4">
+        <div className="bg-cream-100 border border-stone-300 p-6 sm:p-10 mb-16 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-stone-300 gap-3">
             <div>
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold block mb-1">
-                Emotional Storyboard
+              <span className="text-xs font-mono uppercase tracking-widest text-terracotta-600 block mb-1">
+                Visual Script
               </span>
               <h3 className="font-serif text-2xl sm:text-3xl text-charcoal-900">
-                30-Second Milestone Digital Film
+                30-Second Milestone Brand Film Storyboard
               </h3>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-xs uppercase tracking-wider text-charcoal-500 font-medium">
-                Audio Direction:
-              </span>
-              <span className="text-xs bg-champagne-100 text-champagne-800 px-3 py-1 rounded-full font-medium">
-                Warm Piano Progression &times; Orchestral Swell
-              </span>
-            </div>
+            <span className="text-xs font-mono bg-stone-200 border border-stone-300 px-3 py-1.5 text-forest-900">
+              Pacing: Warm piano score &bull; Intimate cinematic realism
+            </span>
           </div>
 
-          {/* Storyboard Navigation Tabs */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 my-8">
-            {campaign.heroFilm.storyboard.map((item, idx) => (
+          {/* Storyboard Navigation Strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 my-6">
+            {campaign.filmStoryboard.map((scene, idx) => (
               <button
-                key={item.scene}
-                onClick={() => setSelectedScene(idx)}
+                key={scene.scene}
+                onClick={() => setActiveFrame(idx)}
                 className={`p-3 text-left transition-all border ${
-                  selectedScene === idx
-                    ? 'bg-charcoal-900 text-ivory-100 border-charcoal-900'
-                    : 'bg-ivory-100 text-charcoal-700 border-charcoal-200 hover:border-champagne-400'
+                  activeFrame === idx
+                    ? 'bg-forest-900 text-cream-50 border-forest-900'
+                    : 'bg-stone-200/70 text-charcoal-700 border-stone-300 hover:border-terracotta-400'
                 }`}
               >
-                <div className="text-[10px] font-mono tracking-wider opacity-70 mb-1">
-                  {item.timestamp}
+                <div className="text-[10px] font-mono opacity-70 mb-1">
+                  {scene.time}
                 </div>
-                <div className="font-serif text-xs sm:text-sm font-medium line-clamp-1">
-                  Scene {idx + 1}: {item.scene}
+                <div className="font-serif text-xs sm:text-sm font-medium truncate">
+                  {scene.scene}
                 </div>
               </button>
             ))}
           </div>
 
-          {/* Active Storyboard Frame Showcase */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-ivory-100 p-6 sm:p-8 border border-charcoal-200">
-            {/* Visual Frame Description */}
-            <div className="lg:col-span-7 space-y-4">
-              <div className="flex items-center gap-2 text-xs font-mono text-champagne-700">
+          {/* Active Frame Presentation */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-stone-200/70 p-6 sm:p-8 border border-stone-300">
+            <div className="lg:col-span-8 space-y-4">
+              <div className="flex items-center gap-2 text-xs font-mono text-terracotta-600">
                 <Clock className="w-3.5 h-3.5" />
-                <span>{campaign.heroFilm.storyboard[selectedScene].timestamp}</span>
-                <span className="mx-1">/</span>
-                <span className="font-sans font-medium uppercase tracking-wider text-charcoal-700">
-                  {campaign.heroFilm.storyboard[selectedScene].scene}
+                <span>{campaign.filmStoryboard[activeFrame].time}</span>
+                <span>/</span>
+                <span className="font-sans font-semibold text-charcoal-800 uppercase">
+                  {campaign.filmStoryboard[activeFrame].scene}
                 </span>
               </div>
 
               <div>
-                <h4 className="text-xs uppercase tracking-luxury text-charcoal-500 font-semibold mb-1">
-                  Cinematic Visual Setup
-                </h4>
-                <p className="text-base sm:text-lg font-serif text-charcoal-900 leading-relaxed">
-                  {campaign.heroFilm.storyboard[selectedScene].visual}
+                <span className="text-[10px] uppercase font-mono tracking-wider text-charcoal-500 block mb-1">
+                  Cinematic Framing
+                </span>
+                <p className="font-serif text-lg sm:text-xl text-charcoal-900 leading-relaxed">
+                  {campaign.filmStoryboard[activeFrame].visual}
                 </p>
               </div>
 
-              <div className="pt-2">
-                <h4 className="text-xs uppercase tracking-luxury text-charcoal-500 font-semibold mb-1">
-                  Dialogue &amp; Audio Arc
-                </h4>
-                <p className="text-sm text-charcoal-700 italic font-serif leading-relaxed bg-ivory-50 p-3 border-l-2 border-champagne-500">
-                  "{campaign.heroFilm.storyboard[selectedScene].audio}"
-                </p>
+              <div className="p-3.5 bg-cream-100 border-l-2 border-terracotta-500 text-sm text-charcoal-700 font-light italic">
+                {campaign.filmStoryboard[activeFrame].audio}
               </div>
             </div>
 
-            {/* On-Screen Graphic / Mood Anchor */}
-            <div className="lg:col-span-5 bg-charcoal-900 text-ivory-100 p-6 border border-charcoal-800 min-h-[200px] flex flex-col justify-between">
-              <div className="flex items-center justify-between text-xs text-champagne-300">
-                <span className="font-mono">FRAME {selectedScene + 1} OF 5</span>
-                <Heart className="w-4 h-4 text-champagne-400" />
+            <div className="lg:col-span-4 bg-forest-900 text-cream-50 p-6 border border-forest-950 min-h-[180px] flex flex-col justify-between">
+              <div className="flex items-center justify-between text-xs text-terracotta-300 font-mono">
+                <span>SCENE {activeFrame + 1} OF 5</span>
+                <Heart className="w-4 h-4 text-terracotta-400" />
               </div>
-
-              <div className="my-4">
-                <div className="text-[11px] uppercase tracking-luxury text-champagne-400 mb-1">
+              <div className="my-3">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-terracotta-300 block mb-1">
                   Emotional Core
-                </div>
-                <div className="font-serif text-lg text-ivory-100">
-                  {campaign.heroFilm.storyboard[selectedScene].onScreen || campaign.heroFilm.storyboard[selectedScene].superText}
+                </span>
+                <div className="font-serif text-base text-cream-100">
+                  {campaign.filmStoryboard[activeFrame].superText || "Genuine self-earned accomplishment."}
                 </div>
               </div>
-
-              <div className="text-[11px] text-charcoal-400 font-sans border-t border-charcoal-800 pt-3">
-                Cinematic Intimacy: Warm incandescent store lighting &times; honest mirror reflections.
+              <div className="text-[10px] font-mono text-cream-200/60 pt-2 border-t border-forest-800">
+                Atmosphere: Warm interior glow &bull; Mirror reflections
               </div>
             </div>
           </div>
         </div>
 
-        {/* Extensions & Campaign Mechanics */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Campaign Strategy */}
-          <div className="lg:col-span-5 bg-ivory-50 border border-charcoal-200 p-6 sm:p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <Award className="w-4 h-4 text-champagne-700" />
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold">
-                Strategic Foundation
-              </span>
-            </div>
-            
-            <h4 className="font-serif text-2xl text-charcoal-900 mb-4">
-              From Traditional Dowry to Self-Made Dignity
-            </h4>
-
-            <p className="text-sm text-charcoal-700 leading-relaxed font-light mb-4">
-              When a young woman steps into a BlueStone store to celebrate her first job, she isn't browsing for trinkets; 
-              she is acquiring a permanent symbol of her financial self-reliance.
-            </p>
-
-            <div className="p-4 bg-champagne-50 border border-champagne-200 text-xs text-champagne-900">
-              <strong className="block mb-1 font-semibold uppercase tracking-wider">
-                Audience Retention Metric:
-              </strong>
-              Emotional relatability converts 3.4&times; better in content recall than discount promotions or generic sparkle close-ups.
-            </div>
+        {/* Social Media & Community Activation Ideas */}
+        <div>
+          <div className="flex items-center gap-2 mb-6">
+            <Share2 className="w-4 h-4 text-terracotta-600" />
+            <h3 className="font-serif text-2xl text-charcoal-900">
+              Community Storytelling &amp; Social Activations
+            </h3>
           </div>
 
-          {/* Social Extensions */}
-          <div className="lg:col-span-7 bg-ivory-50 border border-charcoal-200 p-6 sm:p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <Share2 className="w-4 h-4 text-champagne-700" />
-              <span className="text-[11px] uppercase tracking-luxury text-champagne-700 font-semibold">
-                Social &amp; Community Activation
-              </span>
-            </div>
-
-            <h4 className="font-serif text-2xl text-charcoal-900 mb-6">
-              How the Community Amplifies the Story
-            </h4>
-
-            <div className="space-y-4">
-              {campaign.extensions.map((ext) => (
-                <div key={ext.channel} className="p-4 bg-ivory-100 border border-charcoal-200/80">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-champagne-800 mb-1">
-                    {ext.channel}
-                  </div>
-                  <div className="font-serif text-lg text-charcoal-900 mb-1">
-                    "{ext.headline}"
-                  </div>
-                  <p className="text-xs sm:text-sm text-charcoal-600 font-light">
-                    {ext.subtext}
-                  </p>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {campaign.socialExecutions.map((item) => (
+              <div key={item.title} className="p-6 bg-cream-100 border border-stone-300">
+                <span className="text-xs font-mono uppercase tracking-wider text-terracotta-600 font-semibold block mb-2">
+                  {item.title}
+                </span>
+                <p className="font-serif text-lg text-charcoal-900 mb-2 leading-snug">
+                  {item.copy}
+                </p>
+                <p className="text-xs text-charcoal-600 font-light leading-relaxed">
+                  {item.context}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
     </section>
   );

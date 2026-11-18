@@ -12,44 +12,38 @@ import ContactFooter from './components/ContactFooter';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-ivory-100 text-charcoal-800 font-sans selection:bg-champagne-200 selection:text-charcoal-900">
-      {/* Editorial Top Status Ribbon */}
-      <div className="bg-charcoal-900 text-ivory-200 text-[11px] py-1.5 px-4 text-center border-b border-charcoal-800 font-sans tracking-wide">
-        <span className="text-champagne-400 font-semibold uppercase tracking-luxury mr-2">Candidate Dossier:</span>
-        Bhukya Abhivardhan Nayak (IIT Hyderabad '27) &mdash; Applying for <span className="text-ivory-100 font-medium">Content Generalist – Brand &amp; Content, Marketing</span> at BlueStone Jewellery
-      </div>
-
-      {/* Main Navigation */}
+    <div className="min-h-screen bg-cream-100 text-charcoal-800 font-sans selection:bg-stone-200 selection:text-forest-900">
+      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content Sections */}
+      {/* Main Content */}
       <main>
-        {/* 1. HERO */}
+        {/* 1. HERO — Personal Creative Portfolio Intro */}
         <Hero />
 
-        {/* 2. CONTENT THAT CONNECTS (170K+ & 71K+ Reels Analysis) */}
+        {/* 2. REELS — Made to Catch the Eye */}
         <ContentConnects />
 
-        {/* 3. SPECULATIVE BRAND CAMPAIGN 01: NOT FOR THE LOCKER */}
+        {/* 3. SPECULATIVE CAMPAIGN 01 — Not For The Locker */}
         <SpeculativeCampaign1 />
 
-        {/* 4. SPECULATIVE BRAND CAMPAIGN 02: FOR EVERY FIRST */}
+        {/* 4. SPECULATIVE CAMPAIGN 02 — For Every First */}
         <SpeculativeCampaign2 />
 
-        {/* 5. SHUFFLE CREW (Club Head & Content Lead, 25-member dance team) */}
+        {/* 5. SHUFFLE CREW — 25-Member Team Leadership */}
         <ShuffleCrew />
 
-        {/* 6 & 7. MILAN (Media & PR Coordinator) & NSS (84p Magazine, Merchandise, Guest Talks) */}
+        {/* 6. MILAN & NSS — PR, Coverage & 84-Page Publication */}
         <MilanAndNss />
 
-        {/* 8. ADDITIONAL PROJECT: QUICKBITE AI */}
+        {/* 7. QUICKBITE AI — Product Thinking & Intent Discovery */}
         <QuickBiteAi />
 
-        {/* 9. SKILLS AND TOOLS (CapCut, Figma, Framing, Excel, SQL, Power BI) */}
+        {/* 8. SKILLS & TOOLS — Visual Magazine Layout */}
         <SkillsTools />
       </main>
 
-      {/* 10. CONTACT & EDITORIAL FOOTER */}
+      {/* 9. CONTACT — Distinctive Editorial Footer */}
       <ContactFooter />
     </div>
   );
